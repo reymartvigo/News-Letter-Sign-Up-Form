@@ -1,0 +1,152 @@
+.sign-up-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  gap: 2rem;
+}
+.sign-up-wrapper .image-wrapper img {
+  width: 100%;
+}
+.sign-up-wrapper .message-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.75rem;
+  gap: 1.5rem;
+}
+.sign-up-wrapper .message-wrapper h1 {
+  color: hsl(235, 18%, 26%);
+  font-size: 2.5rem;
+}
+.sign-up-wrapper .list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sign-up-wrapper .list-wrapper p {
+  line-height: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: flex-start;
+  color: hsl(234, 29%, 20%);
+}
+.sign-up-wrapper .form-wrapper {
+  padding: 0 1.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.sign-up-wrapper .form-wrapper .label-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.sign-up-wrapper .form-wrapper .label-wrapper label,
+.sign-up-wrapper .form-wrapper .label-wrapper .msg {
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+.sign-up-wrapper .form-wrapper .label-wrapper .msg {
+  color: hsl(4, 100%, 67%);
+}
+.sign-up-wrapper .form-wrapper .valid {
+  border-radius: 0.75rem;
+  border: 1px solid rgb(202, 205, 221);
+  outline: none;
+  padding: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+.sign-up-wrapper .form-wrapper .valid:hover {
+  cursor: pointer;
+  border: 1px solid hsl(234, 29%, 20%);
+}
+.sign-up-wrapper .form-wrapper .invalid {
+  border-radius: 0.75rem;
+  border: 1px solid hsl(4, 100%, 67%);
+  outline: none;
+  padding: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+.sign-up-wrapper .form-wrapper .invalid:hover {
+  cursor: pointer;
+}
+.sign-up-wrapper .form-wrapper button {
+  background: hsl(234, 29%, 20%);
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: white;
+  cursor: pointer;
+}
+.sign-up-wrapper .form-wrapper button:hover {
+  background: linear-gradient(to left, hsla(4, 100%, 67%, 0.5), hsl(4, 100%, 67%));
+  box-shadow: 0px 15px 20px -5px hsla(4, 100%, 67%, 0.5);
+}
+
+.success-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.success-wrapper .thank-you-wrapper {
+  padding: 8rem 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.success-wrapper .thank-you-wrapper img {
+  width: 20%;
+}
+.success-wrapper .thank-you-wrapper h1 {
+  color: hsl(235, 18%, 26%);
+  font-size: 2.5rem;
+}
+.success-wrapper .thank-you-wrapper p {
+  font-weight: 400;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  color: hsl(234, 29%, 20%);
+  line-height: 1.5rem;
+}
+.success-wrapper .thank-you-wrapper p span {
+  font-weight: 700;
+}
+.success-wrapper .btn-wrapper {
+  margin-top: 10rem;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+.success-wrapper .btn-wrapper button {
+  width: 100%;
+  background: hsl(234, 29%, 20%);
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: white;
+  cursor: pointer;
+}
+.success-wrapper .btn-wrapper button:hover {
+  background: linear-gradient(to left, hsla(4, 100%, 67%, 0.5), hsl(4, 100%, 67%));
+  box-shadow: 0px 15px 20px -5px hsl(4, 100%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}/*# sourceMappingURL=index.css.map */

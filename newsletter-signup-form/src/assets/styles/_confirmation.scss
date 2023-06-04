@@ -1,0 +1,63 @@
+@use "variable";
+
+.success-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  border: 1px solid;
+  @include variable.display;
+  justify-content: space-between;
+
+  .thank-you-wrapper {
+    padding: 8rem 1.5rem 0;
+
+    @include variable.display;
+    gap: 1.5rem;
+
+    img {
+      width: 20%;
+    }
+
+    h1 {
+      color: variable.$CharcoalGrey;
+      font-size: 2.5rem;
+    }
+    p {
+      font-weight: 400;
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+      color: variable.$DarkSlateGrey;
+      line-height: 1.5rem;
+
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .btn-wrapper {
+    margin-top: 10rem;
+    padding: 2rem 1rem;
+    width: 100%;
+    button {
+      width: 100%;
+      background: variable.$DarkSlateGrey;
+      border-radius: 0.5rem;
+      border: none;
+      outline: none;
+      padding: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: white;
+      cursor: pointer;
+      &:hover {
+        background: linear-gradient(
+          to left,
+          hsla(4, 100%, 67%, 0.5),
+          hsl(4, 100%, 67%)
+        );
+        -webkit-box-shadow: 0px 15px 20px -5px hsl(4, 100%, 67%);
+        box-shadow: 0px 15px 20px -5px hsl(4, 100%, 67%);
+      }
+    }
+  }
+}
