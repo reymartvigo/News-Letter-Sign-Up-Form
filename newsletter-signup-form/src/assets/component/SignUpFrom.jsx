@@ -64,7 +64,7 @@ const SignUpFrom = () => {
                             <div className="label-wrapper">
                                 <label>Email address</label>
                                 {!isValid && (
-                                    <span className="msg">Valid email is required</span>
+                                    <span className="msg">Valid email required</span>
                                 )}
                             </div>
                             <input type="text" placeholder="email@company.com" value={email} onChange={handleChange} className={isValid ? 'valid' : 'invalid'}></input>
