@@ -54,9 +54,9 @@ const SignUpFrom = () => {
                             <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
                             <div className='list-wrapper'>
-                                <p><img src={list}></img> Product discovery and building what matters</p>
-                                <p><img src={list}></img> Measuring to ensure updates are a success</p>
-                                <p><img src={list}></img> And much more!</p>
+                                <p><img src={list} alt="" aria-hidden="true"></img> Product discovery and building what matters</p>
+                                <p><img src={list} alt="" aria-hidden="true"></img> Measuring to ensure updates are a success</p>
+                                <p><img src={list} alt="" aria-hidden="true"></img> And much more!</p>
                             </div>
                         </div>
 
