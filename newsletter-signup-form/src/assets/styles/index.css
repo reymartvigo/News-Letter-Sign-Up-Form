@@ -2,28 +2,111 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   gap: 2rem;
 }
-.sign-up-wrapper .image-wrapper img {
+@media screen and (min-width: 768px) {
+  .sign-up-wrapper {
+    padding: 1.5rem 1rem;
+    border-radius: 2rem;
+    width: 45rem;
+    height: 35rem;
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sign-up-wrapper {
+    gap: 0;
+    padding: 1.5rem 0rem 1.5rem 1.5rem;
+    width: 52rem;
+    height: 35rem;
+  }
+}
+.sign-up-wrapper .image-wrapper {
   width: 100%;
 }
-.sign-up-wrapper .message-wrapper {
+.sign-up-wrapper .image-wrapper .mobileImg {
+  width: 100%;
+}
+.sign-up-wrapper .image-wrapper .deskImg {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .sign-up-wrapper .image-wrapper {
+    height: 100%;
+    width: 30rem;
+  }
+  .sign-up-wrapper .image-wrapper .mobileImg {
+    display: none;
+  }
+  .sign-up-wrapper .image-wrapper .deskImg {
+    width: 100% !important;
+    height: 100%;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sign-up-wrapper .image-wrapper {
+    height: 100%;
+    width: 30rem;
+  }
+  .sign-up-wrapper .image-wrapper .deskImg {
+    display: flex;
+  }
+}
+.sign-up-wrapper .bottom-wrapper {
+  height: auto;
   display: flex;
   flex-direction: column;
-  padding: 0 1.75rem;
+}
+@media screen and (min-width: 768px) {
+  .sign-up-wrapper .bottom-wrapper {
+    padding: 1.5rem;
+    gap: 2rem;
+  }
+  .sign-up-wrapper .bottom-wrapper h1 {
+    color: hsl(235, 18%, 26%);
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sign-up-wrapper .bottom-wrapper {
+    padding: 4rem 2rem;
+    gap: 2rem;
+  }
+  .sign-up-wrapper .bottom-wrapper h1 {
+    color: hsl(235, 18%, 26%);
+    font-size: 2rem;
+  }
+}
+.sign-up-wrapper .bottom-wrapper .message-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.75rem;
   gap: 1.5rem;
 }
-.sign-up-wrapper .message-wrapper h1 {
+.sign-up-wrapper .bottom-wrapper .message-wrapper h1 {
   color: hsl(235, 18%, 26%);
   font-size: 2.5rem;
 }
-.sign-up-wrapper .list-wrapper {
+@media screen and (min-width: 768px) {
+  .sign-up-wrapper .bottom-wrapper .message-wrapper {
+    height: auto;
+    padding: unset;
+  }
+  .sign-up-wrapper .bottom-wrapper .message-wrapper h1 {
+    color: hsl(235, 18%, 26%);
+    font-size: 2rem;
+  }
+}
+.sign-up-wrapper .bottom-wrapper .list-wrapper {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-.sign-up-wrapper .list-wrapper p {
+.sign-up-wrapper .bottom-wrapper .list-wrapper p {
   line-height: 1.5rem;
   display: flex;
   flex-direction: row;
@@ -31,46 +114,61 @@
   align-items: flex-start;
   color: hsl(234, 29%, 20%);
 }
-.sign-up-wrapper .form-wrapper {
+.sign-up-wrapper .bottom-wrapper .form-wrapper {
   padding: 0 1.5rem 2.5rem;
   display: flex;
   flex-direction: column;
 }
-.sign-up-wrapper .form-wrapper .label-wrapper {
+@media screen and (min-width: 768px) {
+  .sign-up-wrapper .bottom-wrapper .form-wrapper {
+    padding: unset;
+  }
+}
+.sign-up-wrapper .bottom-wrapper .form-wrapper .label-wrapper {
   display: flex;
   justify-content: space-between;
 }
-.sign-up-wrapper .form-wrapper .label-wrapper label,
-.sign-up-wrapper .form-wrapper .label-wrapper .msg {
+.sign-up-wrapper .bottom-wrapper .form-wrapper .label-wrapper label,
+.sign-up-wrapper .bottom-wrapper .form-wrapper .label-wrapper .msg {
   font-size: 0.75rem;
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
-.sign-up-wrapper .form-wrapper .label-wrapper .msg {
+.sign-up-wrapper .bottom-wrapper .form-wrapper .label-wrapper .msg {
   color: hsl(4, 100%, 67%);
 }
-.sign-up-wrapper .form-wrapper .valid {
+.sign-up-wrapper .bottom-wrapper .form-wrapper .valid {
   border-radius: 0.75rem;
   border: 1px solid rgb(202, 205, 221);
   outline: none;
   padding: 0.9rem;
   margin-bottom: 1.5rem;
 }
-.sign-up-wrapper .form-wrapper .valid:hover {
+.sign-up-wrapper .bottom-wrapper .form-wrapper .valid:hover {
   cursor: pointer;
   border: 1px solid hsl(234, 29%, 20%);
 }
-.sign-up-wrapper .form-wrapper .invalid {
+@media screen and (min-width: 768px) {
+  .sign-up-wrapper .bottom-wrapper .form-wrapper .valid {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sign-up-wrapper .bottom-wrapper .form-wrapper .valid {
+    margin-bottom: 1.5rem;
+  }
+}
+.sign-up-wrapper .bottom-wrapper .form-wrapper .invalid {
   border-radius: 0.75rem;
   border: 1px solid hsl(4, 100%, 67%);
   outline: none;
   padding: 0.9rem;
   margin-bottom: 1.5rem;
 }
-.sign-up-wrapper .form-wrapper .invalid:hover {
+.sign-up-wrapper .bottom-wrapper .form-wrapper .invalid:hover {
   cursor: pointer;
 }
-.sign-up-wrapper .form-wrapper button {
+.sign-up-wrapper .bottom-wrapper .form-wrapper button {
   background: hsl(234, 29%, 20%);
   border-radius: 0.5rem;
   border: none;
@@ -81,18 +179,28 @@
   color: white;
   cursor: pointer;
 }
-.sign-up-wrapper .form-wrapper button:hover {
+.sign-up-wrapper .bottom-wrapper .form-wrapper button:hover {
   background: linear-gradient(to left, hsla(4, 100%, 67%, 0.5), hsl(4, 100%, 67%));
   box-shadow: 0px 15px 20px -5px hsla(4, 100%, 67%, 0.5);
 }
 
 .success-wrapper {
   width: 100%;
-  min-height: 100vh;
-  border: 1px solid;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .success-wrapper {
+    padding: 4rem 3rem;
+    border-radius: 1rem;
+    background: white;
+    width: 25rem;
+    height: 25rem;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .success-wrapper .thank-you-wrapper {
   padding: 8rem 1.5rem 0;
@@ -117,10 +225,36 @@
 .success-wrapper .thank-you-wrapper p span {
   font-weight: 700;
 }
+@media screen and (min-width: 768px) {
+  .success-wrapper .thank-you-wrapper {
+    gap: 1rem;
+    padding: unset;
+    margin-top: 5rem;
+  }
+  .success-wrapper .thank-you-wrapper img {
+    width: 15%;
+  }
+  .success-wrapper .thank-you-wrapper h1 {
+    font-size: 2.5rem;
+  }
+  .success-wrapper .thank-you-wrapper p {
+    font-weight: 400;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    color: hsl(234, 29%, 20%);
+    line-height: 1.5rem;
+  }
+}
 .success-wrapper .btn-wrapper {
   margin-top: 10rem;
   padding: 2rem 1rem;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .success-wrapper .btn-wrapper {
+    margin-top: unset;
+    padding: 2rem 0 5rem;
+  }
 }
 .success-wrapper .btn-wrapper button {
   width: 100%;
@@ -148,5 +282,13 @@
 
 body {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+}
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(235, 18%, 26%);
+  }
 }/*# sourceMappingURL=index.css.map */

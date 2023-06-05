@@ -10,5 +10,12 @@
 
 body {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+
+  @include variable.respond-to(tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: variable.$CharcoalGrey;
+  }
 }

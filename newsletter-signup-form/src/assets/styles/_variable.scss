@@ -19,3 +19,18 @@ $White: hsl(0, 0%, 100%);
   display: $display;
   flex-direction: $flex-direction;
 } // MIXINS //
+
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == tablet {
+    @media screen and (min-width: $breakpoint-tablet) {
+      @content;
+    }
+  } @else if $breakpoint == laptop {
+    @media screen and (min-width: $breakpoint-laptop) {
+      @content;
+    }
+  }
+}
